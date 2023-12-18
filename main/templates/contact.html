@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+    <!-- /.header -->
+
+    <div class="overlay-menu-mobie">
+        <div class="close-btn">
+            <span class="close-menus"></span>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <div class="page-title page-title-blog">
+        <div class="themeflat-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-title-heading">
+                        <h1 class="title">Contact Us</h1>
+                    </div>
+                    <!-- /.page-title-captions -->
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="/">Homepage</a></li>
+                            <li><i class="icon-Arrow---Right-2"></i></li>
+
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.breadcrumbs -->
+
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.page-title -->
+
+    <!-- Map Contact us -->
+    <div class="map-contact-us">
+        <div class="map-contact relative">
+            <div id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3398.9756327491673!2d74.47257597561385!3d31.579716074186912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM0JzQ3LjAiTiA3NMKwMjgnMzAuNSJF!5e0!3m2!1sen!2s!4v1702892256893!5m2!1sen!2s" width="1900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Map Contact us -->
+
+    <!-- Contact us -->
+    <div class="tf-contact-page main-content">
+        <div class="themeflat-container">
+            <div class="row contact-page">
+                <div class="col-md-5">
+                    <div class="contact-page-content">
+                        <div class="content-page-title">
+                            <span class="wow fadeInUp animated">Contact us</span>
+                            <h2 class="wow fadeInUp animated">Get it touch</h2>
+                        </div>
+                        <div class="list-contact-us">
+                            <div class="inner">
+                                <span class="wow fadeInUp animated">Phone: </span>
+                                <h6 class="wow fadeInUp animated">+92 321 8819595</h6>
+                            </div>
+
+                            <div class="inner">
+                                <span class="wow fadeInUp animated">Location:</span>
+                                <h6 class="wow fadeInUp animated">Al-Rehman Garden Phase 4 Phase 4 Al Rehman Garden, Lahore, Punjab</h6>
+                            </div>
+                        </div>
+                        <div class="social-contact">
+                            <ul class="social-media wow fadeInUp animated">
+                                <li>
+                                    <a href="twitter.com"><i class="icon-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="dribbble.com"><i class="icon-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="behance.com"><i class="icon-behance"></i></a>
+                                </li>
+                                <li>
+                                    <a href="pinterest.com"><i class="icon-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-page-form">
+                        <form method="post" id="contactform-page" class="contact-page form-submit" action="/" accept-charset="utf-8" novalidate="novalidate">
+                            <div class="text-wrap clearfix">{% csrf_token %}
+                                <fieldset class="name-wrap">
+                                    <input type="text" id="name" class="tb-my-input" name="name" tabindex="1" placeholder="Your name" value="" size="32" aria-required="true" required="">
+                                </fieldset>
+                                <fieldset class="email-wrap">
+                                    <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Your email" value="" size="32" aria-required="true" required="">
+                                </fieldset>
+                                <fieldset class="phone-wrap">
+                                    <input type="tel" id="phone" class="tb-my-input" name="phone" tabindex="1" placeholder="Telephone" value="" size="32" aria-required="true" required="">
+                                </fieldset>
+                                <fieldset class="age-wrap">
+                                    <input type="text" id="age" class="tb-my-input" name="site" tabindex="1" placeholder="Age" value="" size="32" aria-required="true" required="">
+                                </fieldset>
+                            </div>
+                            <fieldset class="message-wrap">
+                                <textarea id="comment-message" name="message" rows="3" tabindex="4" placeholder="Message" aria-required="true"></textarea>
+                            </fieldset>
+                            <button name="submit" type="submit" id="comment-reply" class="flat-button btn-submit-comment"><span>Join now</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact us -->
+
+    <!-- Footer -->
+{% endblock main %}
